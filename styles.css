@@ -1,0 +1,85 @@
+/* Estilos base del cuerpo del documento by Nickson */
+        body {
+            font-family: 'Roboto', sans-serif; /* Fuente principal */
+            background-color: #f9f9f9; /* Color de fondo */
+            display: flex; /* Usa flexbox para el diseño */
+            flex-direction: column; /* Apila los elementos en columna */
+            align-items: center; /* Centra horizontalmente los elementos */
+            justify-content: center; /* Centra verticalmente los elementos */
+            min-height: 100vh; /* Altura mínima del cuerpo al 100% de la ventana gráfica */
+            margin: 0; /* Elimina márgenes por defecto */
+            padding: 0; /* Elimina relleno por defecto */
+        }
+
+        /* Estilos para el título principal */
+        h1 {
+            margin-top: 50px; /* Espacio superior del título */
+            color: #212121; /* Color del texto */
+            font-size: 2em; /* Tamaño del texto */
+        }
+
+        /* Estilos del formulario de búsqueda */
+        #searchForm {
+            background-color: #ffffff; /* Color de fondo del formulario */
+            padding: 20px; /* Espaciado interno */
+            border-radius: 8px; /* Borde redondeado */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            width: 90%; /* Ancho del formulario */
+            max-width: 600px; /* Ancho máximo del formulario */
+            display: flex; /* Usa flexbox para el diseño interno */
+            justify-content: space-between; /* Distribuye los elementos a los extremos */
+            align-items: center; /* Alinea el contenido verticalmente */
+            position: relative; /* Permite posicionamiento relativo para los elementos hijos */
+        }
+
+        /* Estilos del campo de búsqueda */
+        #searchForm input[type="text"] {
+            flex: 1; /* Permite que el campo de texto ocupe el espacio disponible */
+            padding: 12px; /* Espaciado interno */
+            margin-right: 10px; /* Espacio derecho entre el campo de texto y el botón */
+            border: 1px solid #ddd; /* Borde del campo de texto */
+            border-radius: 4px; /* Borde redondeado */
+            font-size: 16px; /* Tamaño del texto */
+            box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+        }
+
+        /* Estilos del botón de búsqueda */
+        #searchForm button {
+            padding: 12px 20px; /* Espaciado interno del botón */
+            background-color: #ff0000; /* Color de fondo del botón */
+            border: none; /* Sin borde */
+            border-radius: 4px; /* Borde redondeado */
+            color: #ffffff; /* Color del texto */
+            font-size: 16px; /* Tamaño del texto */
+            cursor: pointer; /* Cambia el cursor al pasar por encima */
+            transition: background-color 0.3s ease; /* Transición suave */
+        }
+
+        /* Estilos del botón de búsqueda al pasar el cursor */
+        #searchForm button:hover {
+            background-color: #cc0000; /* Color de fondo al pasar el cursor */
+        }
+
+        /* Estilos para el iframe */
+        iframe {
+            width: 100%; /* Ancho completo del iframe */
+            height: 600px; /* Altura fija del iframe */
+            border: none; /* Sin borde */
+        }
+
+        /* Media query para dispositivos móviles */
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px; /* Espaciado alrededor del contenido en dispositivos pequeños */
+            }
+
+            #searchForm {
+                width: 100%; /* Ancho completo en dispositivos pequeños */
+                flex-direction: column; /* Apila los elementos verticalmente */
+            }
+
+            #searchForm button {
+                width: 100%; /* Ancho completo del botón en dispositivos pequeños */
+                margin-top: 10px; /* Espacio entre el campo de texto y el botón en dispositivos pequeños */
+            }
+        }
