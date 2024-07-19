@@ -8,6 +8,7 @@ Es una herramienta web diseñada para buscar, convertir y descargar videos de Yo
 - HTML5
 - JavaScript
 - CSS
+- Python
 
 ## Instalación
 
